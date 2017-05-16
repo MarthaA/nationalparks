@@ -37,7 +37,7 @@
 				<h1>
 					Our love for the National Parks started in Ohio.
 				</h1>
-				<div class="arrow">&darr;</div>
+				<div class="arrow-green">&darr;</div>
 				<div class="wrappermain">
 					<div id="onemain">
 								<img src="img/img-waterfall-2.jpg" class="previewmain">
@@ -46,7 +46,7 @@
 				</div>
 </div>
 
-				<div class="intro">		<div class="hideme">
+				<div class="intro-green">		<div class="hideme">
 
 				<div class="leftdetails">
 					<div class="location">
@@ -97,8 +97,6 @@ We were both attending Kent State University when we started dating. Our favorit
 					<h1>Our Goal</h1>
 					<h2>59 National Parks</h2>
 				</div>
-					<div class="hideme">
-
 						<p>
 						Acadia National Park,	Maine &#8226
 						National Park of American Samoa, American Samoa &#8226
@@ -160,8 +158,19 @@ We were both attending Kent State University when we started dating. Our favorit
 						Yosemite National Park, California &#8226
 						Zion National Park, Utah &#8226</p>
 					</div></div>
-		</div>
+
 </div>
+</div>
+<div class="wrapper">
+	<div id="one">
+			<a class"image" href="galleryone.html"><img src="img/img-waterfall.jpg" class="one"></a>
+	</div>
+	<div id="two-green"><h3 class="two"> Waterfalls, overlooks, and trails. </h3>
+						<br><h4><a href="galleryone.html" class"link">See Gallery 	&rarr;</h4></a></h4>
+	</div>
+	<div id="two-mobile"><h3 class="two"> Waterfalls, overlooks, and trails. </h3>
+						<br><h4><a href="galleryone.html" class"link">See Gallery 	&rarr;</h4></a></h4>
+	</div>
 </div>
 </main>
 
@@ -202,11 +211,10 @@ $(document).ready(function() {
 
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
-								$(this).animate({ opacity:'1'}, 1000);
+								$(this).animate({ opacity:'1'}, 800);
             }
         });
     });
 });
 </script>
-<script async src="//jsfiddle.net/02dmq1n4/49/embed/"></script>
 </html>

@@ -35,12 +35,13 @@
 				<h1>
 					Wednesday evening we flew into Jackson, Wyoming.
 				</h1>
-				<div class="arrow">&darr;</div>
+				<div class="arrow-orange">&darr;</div>
 				<div class="wrappermain">
 						<div id="onemain">
 								<img src="img/img-waterfall-2.jpg" class="previewmain">
 						</div>
 				</div>
+				<div class="intro-orange">		<div class="hideme">
 				<div class="leftdetails">
 					<div class="location">
 						<h5>Location</h5>
@@ -53,10 +54,10 @@
 				</div>
 				<div class="rightparagraph">
 					<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt 
 					</p>
-				</div>
-				<div class="wrapper"><!-- Image with white block in center -->
+				</div></div></div>
+				<div class="wrapper-right"><!-- Image with white block in center -->
 					<div id="one-full-width">
 						<div class="inner">
 								<img src="img/img-11.jpg" class="one">
@@ -69,21 +70,49 @@
 						<br><h4><a href="galleryone.html" class"link">See Gallery 	&rarr;</h4></a></h4>
 					</div>
 				</div>
-
-				<div class="wrapper-side-by">
-						<div id="one-side-by">
-								<img src="img/img-14.jpg" class="preview-side-by">
-						</div>
-				</div>
-				<div class="wrapper-side-by">
-						<div id="one-side-by">
-								<img src="img/img-14.jpg" class="preview-side-by">
-						</div>
-				</div>
-				<p>
+				<p class="middle">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
 				</p>
-
+				<div class="img-wrapper">
+				<div class="wrapper-side-by">
+						<div id="one-side-by">
+								<img src="img/img-14.jpg" class="preview-side-by">
+						</div>
+				</div>
+				<div class="wrapper-side-by">
+						<div id="one-side-by">
+								<img src="img/img-14.jpg" class="preview-side-by">
+						</div>
+				</div>
+				<div class="wrapper-side-by">
+						<div id="one-side-by">
+								<img src="img/img-14.jpg" class="preview-side-by">
+						</div>
+				</div>
+			</div>
+				<p class="below">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam
+				<div class="wrappermain">
+						<div id="onemain-right">
+								<img src="img/img-waterfall-2.jpg" class="previewmain">
+						</div>
+				</div>
+				<div class="intro-orange-less-padding">		<div class="hideme">
+				<div class="leftdetails">
+					<div class="location">
+						<h5>Location</h5>
+						<p>Grand Teton</p>
+					</div>
+					<div class="date">
+						<h5>Date</h5>
+						<p>May 24 to May 26</p>
+					</div>
+				</div>
+				<div class="rightparagraph">
+					<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt
+					</p>
+				</div></div></div>
 		</div>
 
 
@@ -95,6 +124,30 @@
 <script>
 	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 </script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/main.js"></script>
+<script>
+$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+								$(this).animate({ opacity:'1'}, 800);
+            }
+        });
+    });
+});
+</script> <!-- Resource jQuery -->
 </body>
 </html>
