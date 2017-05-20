@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 
 	<title>Cuyahoga Valley</title>
 </head>
@@ -38,15 +40,17 @@
 					Our love for the National Parks started in Ohio.
 				</h1>
 				<div class="arrow-green">&darr;</div>
-				<div class="wrappermain">
-					<div id="onemain">
+								<div class="wrapper-intro">
+					<div id="onemain-1">
 								<img src="img/img-waterfall-2.jpg" class="previewmain">
 						</div>
-
+						<div class="img-caption-style-2">
+							Brandywine Falls
+						</div>
 				</div>
 </div>
 
-				<div class="intro-green">		<div class="hideme">
+				<div class="intro-1">		<div class="hideme">
 
 				<div class="leftdetails">
 					<div class="location">
@@ -66,37 +70,65 @@ We were both attending Kent State University when we started dating. Our favorit
 			</div>
 </div></div></div>
 <div class="section">
-	<div class="hideme">
 
-				<div class="wrapper-side-by">
-						<div id="one-side-by">
-								<img src="img/img-engagement.jpg" class="preview-side-by">
-								<figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
 
-						</div>
-				</div>
-				<div class="wrapper-side-by">
-						<div id="one-side-by">
-								<img src="img/img-wedding.jpg" class="preview-side-by">
-						</div>
-				</div>
-			</div>
-</div>
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider" data-step1="M1402,800h-2V525V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H739L427,523L760,0h639c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V525V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h661l312-277L640,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V521V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+				<li class="visible">
+					<div class="cd-svg-wrapper">
+						<svg viewBox="0 0 1400 800">
+							<title>Aimated SVG</title>
+							<defs>
+								<clipPath id="cd-image-1">
+									<path id="cd-changing-path-1" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+								</clipPath>
+							</defs>
+
+							<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="img/img-engagement.jpg"></image>
+						</svg>
+					</div> <!-- .cd-svg-wrapper -->
+				</li>
+
+				<li>
+					<div class="cd-svg-wrapper">
+						<svg viewBox="0 0 1400 800">
+							<title>Aimated SVG</title>
+							<defs>
+								<clipPath id="cd-image-2">
+									<path id="cd-changing-path-2" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+								</clipPath>
+							</defs>
+
+							<image height='800px' width="1400px" clip-path="url(#cd-image-2)" xlink:href="img/img-wedding.jpg"></image>
+						</svg>
+					</div> <!-- .cd-svg-wrapper -->
+				</li>
+
+
+			</ul> <!-- .cd-slider -->
+
+			<ul class="cd-slider-navigation">
+				<li><a href="#0" class="next-slide">Next</a></li>
+				<li><a href="#0" class="prev-slide">Prev</a></li>
+			</ul>
+			<div class="img-caption">
+				Photos by Kelley Jordan Photography
+			</div> <!-- .cd-slider-navigation -->
+		</div> <!-- .cd-slider-wrapper -->
+
 <div class="section">
-	<div class="hideme">
 
 					<p class="below">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipr
 					</p>
+
 				</div>
-</div><div class="section">
+<div class="section">
 
 					<div id="list">
-						<div class="hideme">
 
 					<h1>Our Goal</h1>
 					<h2>59 National Parks</h2>
-				</div>
 						<p>
 						Acadia National Park,	Maine &#8226
 						National Park of American Samoa, American Samoa &#8226
@@ -182,17 +214,27 @@ We were both attending Kent State University when we started dating. Our favorit
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body></body>
 <footer>
-<ul id="footer">
-<div class="footer-links">
-	<li><a href="tetonvillage.html" class="active">Teton Village</a></li>
-	<li><a href="grandteton.html">Grand Teton</a></li>
-	<li><a href="#0">Yellowstone</a></li>
-	<li><a href="#0">Driggs</a></li>
-	<li><a href="goal.html">About Us</a></li>
-</ul>
-</div>
-</footer>
 
+	<div class="footer">
+		<nav class="cd-primary-nav">
+
+			<ul id="cd-navigation">
+				<li><a href="cuyahogavalley.html" >Cuyahoga Valley</a></li>
+				<li><a href="grandteton.html">Grand Teton</a></li>
+				<li><a href="yellowstone.html">Yellowstone</a></li>
+			</ul>
+		</nav>
+	</div>
+	</footer>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/main.js"></script><!-- Resource jQuery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script>
 <script>
 $(function(){  // $(document).ready shorthand
   $('.monster').fadeIn('slow');
@@ -217,4 +259,6 @@ $(document).ready(function() {
     });
 });
 </script>
+
+</body>
 </html>
