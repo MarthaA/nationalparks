@@ -6,12 +6,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
 
-
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-	<title>Grand Teton</title>
+
+	<title>Resources</title>
 </head>
 <body>
 <header class="cd-auto-hide-header">
@@ -24,15 +24,34 @@
 		</a> <!-- .nav-trigger -->
 
 		<ul id="cd-navigation">
-			<li><a href="cuyahogavalley.html" >Cuyahoga Valley</a></li>
-			<li><a href="grandteton.html"class="active">Grand Teton</a></li>
+			<li><a href="cuyahogavalley.html">Cuyahoga Valley</a></li>
+			<li><a href="grandteton.html">Grand Teton</a></li>
 			<li><a href="yellowstone.html">Yellowstone</a></li>
 		</ul>
 	</nav>
 </header>
-<div class="homepage">
-<img src="img/img-9.jpg" class="homepage">
+
+<!-- fade page in on load -->
+	<main>
+
+		<div class="main">
+				<h1> Resources </h1>
+				<h2> These templates jump-started parts of this website:</h2>
+				<h3> Codyhouse</h3>
+				<p class="left-aligned"><a href="https://codyhouse.co/gem/auto-hiding-navigation/" target="_blank">Auto-Hiding Navigation</a></p>
+				<p class="left-aligned"><a href="https://codyhouse.co/gem/animated-svg-image-slider/" target="_blank">Animated SVG Image Slider</a></p>
+				<h3> Ettrics</h3>
+				<p class="left-aligned"><a href="http://codepen.io/ettrics/pen/VvxmPV" target="_blank">Google Photos Material Gallery</a></p>
+
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body></body>
 <footer>
 
 	<div class="footer">
@@ -40,7 +59,7 @@
 
 			<ul id="cd-navigation">
 				<li><a href="cuyahogavalley.html">Galleries</a></li>
-				<li><a href="resource_credit.html">Resources + Credits</a></li>
+				<li><a href="resource_credit.html" class="active">Resources + Credits</a></li>
 			</ul>
 		</nav>
 	</div>
