@@ -16,7 +16,7 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   max-width: 1800px;
-  margin: 3em;
+
   margin-top: 60px;
 }
 
@@ -54,7 +54,7 @@ body {
   max-width: 1000px;
   margin-left: 13%;
   line-height: 1;
-  color: #e14658;
+  color: #689880;
   font-size: 2rem;
   text-align: left;
   margin-bottom: 35px;
@@ -199,7 +199,6 @@ img.icon {
   float:left;
   margin-left: -2.5em;
   margin-top: 1.5em;
-  width: 2%;
 }
 img.icon-lodging {
   float:left;
@@ -477,6 +476,7 @@ h3.two-full-width{
   margin-left: 0;
   padding-left: 40px;
   margin-bottom: 0px;
+  padding-top: 0px;
 }
 .two {
   font-family: "Merriweather", Serif;
@@ -904,6 +904,7 @@ img.preview-side-by {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 70px;
+  padding-left: 1.5em;
 }
 
 .wrappermain {
@@ -1449,9 +1450,10 @@ Slider
 -------------------------------- */
 .cd-slider-wrapper {
   position: relative;
-  width: 90%;
+  width: 80%;
   max-width: 1600px;
   margin: 2em auto;
+  margin-left: 3%;
   /* hide horizontal scrollbar on IE11 */
   margin-top: 5em;
   margin-bottom: 5em;
@@ -1804,6 +1806,10 @@ Gallery Styles
 .wrapper-side-by {
   margin-top: 2em;
 }
+.rightparagraph p {
+  width: 50%;
+  margin: auto;
+}
 #onemain-4 {
   float:right;
   width:80%;
@@ -1916,7 +1922,15 @@ h3 {
   width: 80%;
   border-top: solid 0px;
 }
+h3.two-full-width{
+  margin-left: 0;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 2em;
+  margin-top: 0px;
 
+}
 #one {
   height:400px;
   overflow: hidden;
@@ -1930,7 +1944,7 @@ h3 {
   position: relative;
   margin-left: 5%;
   margin-right: 0%;
-  margin-top: 0em;
+  margin-top: 5em;
   min-height:170px;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1980,12 +1994,17 @@ h3 {
   margin-left: 5%;
 }
 #list h1, #list h2 {
-  width: 80%;
+margin-left: 5%;
+    width: 80%;
 }
 
-p, .rightparagraph p,#list p {
+p, .rightparagraph p{
   width: 50%;
   margin:auto;
+}
+#list p {
+  margin-left: 5%;
+  width: 80%;
 }
 }
 @media screen and (max-width: 700px) {
@@ -2014,10 +2033,21 @@ p, .rightparagraph p,#list p {
     height: 300px;
   }
   .intro-2 {
-    margin-top: -13em;
+    margin-top: -15em;
     margin-right: 0em;
-    margin-left:0%;
-    width:80%;
+    margin-left:0;
+    padding-bottom: 12em;
+    width:100%;
+    padding-top: 15%;
+  }
+  .leftdetails-4 {
+    margin-left: 10%;
+  }
+  .leftdetails {
+    margin-top: 3em;
+  }
+  .date {
+    padding-left: 0em;
   }
   .quote {
     width: 80%;
@@ -2031,6 +2061,10 @@ p, .rightparagraph p,#list p {
     margin-top: .5em;
     margin-bottom: .5em;
     font-size: 4.5rem;
+  }
+  .quote-background {
+    padding: 1.5em;
+    font-size: 3.5rem;
   }
   h3 {
     margin-left: 5%;
@@ -2080,7 +2114,9 @@ p, .rightparagraph p,#list p {
     min-width: 0;
     font-size: 14px;
   }
-
+p, .rightparagraph p {
+  width: 70%;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -2088,7 +2124,14 @@ p.below {
   margin-top: 4em;
   margin-bottom: 4em;
 }
-
+.cd-slider-wrapper {
+width: 95%;
+margin-left: 5%;
+}
+.leftdetails-4 {
+  margin-left: 12%;
+  padding-top: 6em;
+}
 p.middle {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -2112,8 +2155,11 @@ p.middle {
 img.preview-side-by {
   top: -100px;
 }
-.main h1, .quote, h3 {
+.main h1, .quote, h3, #list h1 {
   font-size: 4rem;
+}
+#list h2 {
+  font-size: 2rem;
 }
 .two {
   font-size: 3rem;
@@ -2131,20 +2177,41 @@ img.preview-side-by {
 .intro-1 {
   padding-top: 8em;
 }
+.leftdetails {
+  margin-top: 8em;
+}
 }
 @media screen and (max-width: 487px) {
 .leftdetails {
   height: 200px;
 }
-.main h1, .quote, h3 {
+.main h1, .quote, #list h1 {
+  font-size: 3.5rem;
+}
+h3 {
   font-size: 3rem;
+}
+#list h2 {
+  font-size: 2rem;
+}
+h3.two {
+    font-size: 3rem;
+}
+.quote-background {
+  font-size: 2.75rem;
 }
 }
 @media screen and (max-width: 443px) {
 .intro-2 {
   padding-bottom: 12em;
 }
-
+p, .rightparagraph p, p.below, #list p {
+  width: 85%;
+}
+.leftdetails-4 {
+  margin-left: 15%;
+  padding-top: 3em;
+}
 }
 
 
@@ -2154,17 +2221,18 @@ img.preview-side-by {
 }
 .intro-1 {
   padding-top: 10em;
-  margin-top: -27em;
+  margin-top: -20em;
 }
 #onemain-1 {
-  height: 40%;
+  height: 20%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  top: -140px;
 }
 .leftdetails {
   height: 200px;
 }
-img.previewmain {
-  top: -50px;
-}
+
 .leftdetails h1 {
   padding-left: 0px;
 }
@@ -2177,5 +2245,17 @@ img.one {
 }
 .intro-2 {
   margin-top: -20em;
+}
+.leftdetails-4 {
+  padding-top: 5em;
+}
+}
+@media screen and (max-width: 350px) {
+.intro-1 {
+  margin-top: -16em;
+  padding-top: 5em;
+}
+.leftdetails-4 {
+  margin-left: 18%;
 }
 }
